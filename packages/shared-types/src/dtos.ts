@@ -23,7 +23,7 @@ export interface CreateBillDto {
   amount: number;
 
   /** Задолженность по счёту. */
-  debt: number;
+  debt: number | null;
 
   /** Дата получения уведомления о счёте в формате ISO 8601. */
   notificationDate: string | null;
